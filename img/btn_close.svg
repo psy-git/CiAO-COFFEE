@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.72 23.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: orange;
+      }
+    </style>
+  </defs>
+  <g id="gnb_2depth">
+    <polygon class="cls-1" points="13.98 11.86 23.72 21.6 21.6 23.72 11.86 13.98 2.12 23.72 0 21.6 9.74 11.86 0 2.12 2.12 0 11.86 9.74 21.6 0 23.72 2.12 13.98 11.86"/>
+  </g>
+</svg>
