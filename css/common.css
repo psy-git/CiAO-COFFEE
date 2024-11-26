@@ -42,8 +42,18 @@ p{
     padding:0.4rem 1.5rem;
     display: inline-block;
     cursor: pointer; /* span태그로 만들었을 경우 */
+    font-size: 0.9rem;
 }
-.btn_common.yes,.btn_common.white{
+.btn_common.no{
+    color:#fff;
+    border:1px solid #fff;
+}
+.btn_common.no:hover{
+    background-color: transparent;
+    color:var(--main-color);
+    border:1px solid var(--main-color);
+}
+.btn_common.yes,.btn_common.no{
     font-size:16px;
 }
 .btn_common.yes{
@@ -54,9 +64,6 @@ p{
 .btn_common.yes:hover{
     background-color: rgba(0,0,0,0);
     color:var(--main-color);
-}
-.btn_common.white:hover{
-    border:1px solid var(--main-color);
 }
 .btn_common.big{
     padding:0.4rem 2rem;
@@ -84,4 +91,36 @@ p{
     border:1px solid #fff;
 }
 
+input[type="checkbox"]{
+    display: none;
+}
+label.checkbox{
+    /* width: 1rem;
+    height:1rem; */
+    display: inline-flex;
+    /* flex컨테이너가 inline태그처럼 포함하는 컨텐츠 만큼의 너비를 갖제 되는 형태 */
+    gap:0.5rem;
+}
+.custom_checkbox{
+    border:1px solid #000;
+    display: block;
+    width:1rem;
+    height:1rem;
+}
+input[type="checkbox"]:checked+.custom_checkbox{
+    background: url("../img/icn_check.svg")  no-repeat 50% 50% / 85% auto;
+}
+
+.bbs_pagination{
+    display: flex;
+    justify-content: center;
+    gap:var(--space-small);
+    margin-bottom:var(--space-xlarge);
+}
+.bbs_pagination a{
+    padding:0.2rem 0.3rem;
+}
+.bbs_pagination a.on{
+    color: var(--main-color);
+}
 
